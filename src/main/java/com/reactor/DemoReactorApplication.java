@@ -2,6 +2,7 @@ package com.reactor;
 
 import com.reactor.model.Persona;
 import com.reactor.operador.creacion.Creacion;
+import com.reactor.operador.filtrado.Filtrado;
 import com.reactor.operador.transformacion.Transformacion;
 import io.reactivex.Observable;
 import org.slf4j.Logger;
@@ -68,8 +69,10 @@ public class DemoReactorApplication implements CommandLineRunner {
 		//Creacion app = new Creacion();
 		//app.range();
 		//app.repeat();
-		Transformacion app = new Transformacion();
-		app.groupBy();
+		//Transformacion app = new Transformacion();
+		//app.groupBy();
+		Filtrado app = new Filtrado();
+		app.distinct();
 	}
 
 }
