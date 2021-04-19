@@ -1,6 +1,7 @@
 package com.reactor;
 
 import com.reactor.model.Persona;
+import com.reactor.operador.combinacion.Combinacion;
 import com.reactor.operador.creacion.Creacion;
 import com.reactor.operador.filtrado.Filtrado;
 import com.reactor.operador.transformacion.Transformacion;
@@ -71,8 +72,10 @@ public class DemoReactorApplication implements CommandLineRunner {
 		//app.repeat();
 		//Transformacion app = new Transformacion();
 		//app.groupBy();
-		Filtrado app = new Filtrado();
-		app.distinct();
+		//Filtrado app = new Filtrado();
+		//app.skipLast();
+		Combinacion app = new Combinacion();
+		app.zipWith();
 	}
 
 }
